@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Orbitron:wght@400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=VT323&family=Vibur&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300.. 700&family=Noto+Sans:ital,wght@0,100..900; 1.100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000; 1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000; 1.200..1000&family=Orbitron:wght@400.. 900&família=Raleway:ital,wght@0,100..900; 1.100.900&família=Roboto:ital,wght@0.100; 0,300; 0,400; 0,500; 0,700; 0,900; 1,100; 1,300; 1,400; 1,500; 1,700; 1.900&family=Sacramento&family=VT323&family=Vibur&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Itim&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Orbitron:wght@400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sacramento&family=VT323&family=Vibur&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fontePadrao);
+}
+
+html{
+    font-size: 62.5%;
+}
+
+:root{
+    --brancoMedio: #FFFDE4;
+    --rosaMedio: #FF576B;
+    --rosaEscuro: #FF001E;
+    --fonteCursiva: 'Sacramento', cursive;
+    --fonteAMao: 'Itim', cursive;
+    --fontePadrao: 'Nunito', sans-serif;
+}
+
+body{
+    background-color: var(--brancoMedio);
+    color: var(--rosaMedio);
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.banner{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--rosaEscuro);
+
+}
+
+.banner .logoContainer{
+    display: flex;
+}
+
+.banner .logoContainer .titleContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.banner .logoContainer .title1{
+    font-family: var(--fonteAMao);
+    font-size: 3em;
+    align-self: end;
+}
+
+.banner .logoContainer .title2{
+    font-family: var(--fonteCursiva);
+    font-weight: bold;
+    font-size: 8em;
+}
+
+.banner .logoContainer img{
+    width: 3em;
+}
+
+.banner .hours{
+    display: flex;
+    gap: 1rem;
+    font-size: 1.5em;
+    font-weight: bold;
+
+}
+
+.banner .hours .states{
+    color: green;
+}
+
+.styleSection{
+    padding: 0 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+.styleSection .title{
+    font-family: var(--fonteCursiva);
+    font-size: 5rem;
+}
+
+.styleSection .items{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 400px));
+    gap: 2em;
+}
+
+.styleSection .items .item{
+    background-color: white;
+    border-radius: 1em;
+    padding: 1.5em;
+    display: flex;
+    gap: 0.5em;
+}
+
+.styleSection .items .item .sweetImg{
+    width: 10em;
+    height: 10em;
+    background-image: url(./imgs/cake.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+    border-radius: 1em;
+}
+
+.styleSection .items .item .texts{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    width: 60%;
+}
+
+.styleSection .items .item .texts .titleItem{
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.styleSection .items .item .texts .valueItem{
+    font-family: var(--fonteAMao);
+    font-size: 1.2rem;
+}
+
+.styleSection .items .item .texts .addShoppingCart{
+    width: 2.5em;
+    height: 2.5em;
+    background-image: url('./imgs/pinkShoppingCart.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: 0;
+    align-self: flex-end;
+}
+
+@media (min-width: 1100px) {
+    html{
+        font-size: 75%;
+    }
+    .styleSection .items{
+        justify-content: center;
+    }
+}
